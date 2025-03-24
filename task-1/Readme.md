@@ -11,6 +11,7 @@
 - `<h1>` - Main heading of the page
 - `<h2>` - Secondary heading of the page
 - `<p>` - Represented as Paragraph which contains the paragraph content
+- `<a>` - Defines a hyperlink, which is used to link from one page to another.
 
 _Created a Static Webpage (Inkline Shop)_
 
