@@ -47,7 +47,11 @@ nav {
 }
 
 .tab_content {
-    display: none;
+    display: none; 
+    visibility: hidden; 
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s 0.5s; 
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -62,11 +66,14 @@ nav {
     border-radius: 10px;
 }
 
-#tab1:checked~.tab_content#content1,
-#tab2:checked~.tab_content#content2,
-#tab3:checked~.tab_content#content3,
-#tab4:checked~.tab_content#content4 {
-    display: block;
+#tab1:checked ~ .tab_content#content1,
+#tab2:checked ~ .tab_content#content2,
+#tab3:checked ~ .tab_content#content3,
+#tab4:checked ~ .tab_content#content4 {
+    display: block; 
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); 
 }
 
 #tab1:checked~nav .tab_label[for="tab1"],
@@ -108,7 +115,7 @@ nav {
 }
 
 .dot {
-    color: #0aec43;
+    color: #d50aec;
     font-size: 20px;
     margin-right: 10px;
 }
