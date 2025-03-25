@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 5 Modal - CSS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-img">
+                <img src="./assests/aws.jpg" alt="Image 1">
+            </div>
+            <div class="card-title">
+                <p>AWS</p>
+            </div>
+            <div class="card-desp">
+                <p>AWS (Amazon Web Services) events are organized to
+                    showcase the latest in cloud computing technologies,
+                    offering learning opportunities on topics like
+                    infrastructure, machine learning, data analytics,
+                    and security.</p>
+            </div>
+            <div class="card-btn">
+                <a href="#modal" class="open-btn">Register Now</a>
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn"><a href="#">X</a></span>
+                <h2>Registration form</h2>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
+
+    </body>
+</html>
