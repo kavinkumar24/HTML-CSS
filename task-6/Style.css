@@ -1,0 +1,127 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F3F4F6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.main_heading {
+    text-align: center;
+    color: #1E3A8A;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+    background: linear-gradient(to right, #8884f8, #f94fd4);
+    border-bottom: 1px solid #ccc;
+    margin-top: 0;
+}
+
+.tab_label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+
+.tab_content {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    max-height: 80vh;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-top: 0%;
+    border-radius: 10px;
+}
+
+#tab1:checked~.tab_content#content1,
+#tab2:checked~.tab_content#content2,
+#tab3:checked~.tab_content#content3,
+#tab4:checked~.tab_content#content4 {
+    display: block;
+}
+
+#tab1:checked~nav .tab_label[for="tab1"],
+#tab2:checked~nav .tab_label[for="tab2"],
+#tab3:checked~nav .tab_label[for="tab3"],
+#tab4:checked~nav .tab_label[for="tab4"] {
+    background-color: #1E3A8A;
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .card_heading {
+        font-size: medium;
+    }
+}
+
+.card {
+    background: linear-gradient(to right, #c1f2ff, #d8d8ff);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 33%;
+}
+
+.tab_content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tab_content li {
+    text-align: justify;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.dot {
+    color: #0aec43;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.card img {
+    height: 50%;
+    width: 20%;
+    border-radius: 10px 30px 30px 2px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.card_heading {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
