@@ -24,5 +24,6 @@
 | `transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;`                    | Allows to provide the animation (fade in and out) while navigating to the sections   |
 |  | Other basic CSS elements is used. |
 
-## Output Images for Web and mobile View
+## Output Gifs for Web and mobile View
 ![alt text](./assests/Output.gif)
+![alt text](./assests/output.png)
