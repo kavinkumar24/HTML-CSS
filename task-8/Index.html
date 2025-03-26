@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 8 - Accordion</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="accordion">
+            <h1>Types of Combinators</h1>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="section1">
+                <label for="section1" class="accordion-header">Descendant
+                    Combinator</label>
+                <div class="accordion-content">
+                    <p>Selects all descendants (children, grandchildren, etc.)
+                        of a specified element.</p>
+                    <p><strong>Example:</strong> <code>div p</code> selects all
+                        <code>p</code> tags inside a <code>div</code> tag.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="section2">
+                <label for="section2" class="accordion-header">Child
+                    Combinator</label>
+                <div class="accordion-content">
+                    <p>Selects only direct children of a specified element.</p>
+                    <p><strong>Example:</strong> <code>div > p</code> selects
+                        <code>p</code> tags that are direct children of a
+                        <code>div</code> tag.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="section3">
+                <label for="section3" class="accordion-header">Next Sibling
+                    Combinator</label>
+                <div class="accordion-content">
+                    <p>Selects an element immediately following a specified
+                        element.</p>
+                    <p><strong>Example:</strong> <code>h1 + p</code> selects the
+                        first <code>p</code> tag immediately after any
+                        <code>h1</code> tag.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="section4">
+                <label for="section4" class="accordion-header">Subsequent
+                    Sibling Combinator</label>
+                <div class="accordion-content">
+                    <p>Selects all siblings of a specified element, even if they
+                        are not immediately following it.</p>
+                    <p><strong>Example:</strong> <code>h1 ~ p</code> selects all
+                        <code>p</code> elements that are siblings of any
+                        <code>h1</code> tag.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
